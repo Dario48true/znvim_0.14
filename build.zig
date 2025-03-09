@@ -5,7 +5,7 @@ pub fn build(b: *std.Build) !void {
     const optimize = b.standardOptimizeOption(.{});
 
     const msgpack = b.dependency(
-        "zig-msgpack",
+        "zig_msgpack",
         .{ .target = target, .optimize = optimize },
     );
 
